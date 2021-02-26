@@ -1,0 +1,113 @@
+.challengeBoxContainer { /*Config, div de detalhes desafios completados*/
+  height: 100%;
+
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  text-align: center;
+} 
+
+.challengeNotActive { /*Config, div que o detahes não estão ativos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.challengeNotActive strong { 
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.challengeNotActive p { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+
+.challengeNotActive p img { 
+   margin-bottom: 1rem;
+}
+
+.challengeActive  {  /*Config, div que o detahes estão ativos*/
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+ }
+
+.challengeActive header {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--gray-line);
+} 
+
+.challengeActive main { /*config. objeto internos div ao centro*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;/*posiciono objetos na mesma coluna no centro*/
+    align-items: center; /*alinho ao centro vertical*/
+    justify-content: center; /*alinho ao centro horizontal*/
+}
+
+.challengeActive main strong {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    margin: 1.5rem 0 1rem;
+}  
+
+.challengeActive main p {
+    line-height: 1.5; /*aumento linha de espaço entre os objetos ao centro*/
+}
+
+.challengeActive footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*1f 1f - duas colunas com metade do tamanho*/
+    gap: 1rem; /*[gap] - distancio a posições dos objetos entre as colunas*/
+}
+
+.challengeActive footer button {
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: filter 0.2s;/* aplico a transição 200 milesimos segundos no evento butto:hover em filter*/
+
+}
+
+.challengeActive footer button.challengeFailedButton {
+    background: var(--red);
+}
+
+.challengeActive footer button.challengeSucceededButton {
+    background: var(--green);
+}
+
+.challengeActive footer button:hover { /*aplicando o hover para ambos botões footer*/
+    filter: brightness(0.9); /*[filter]- opção de estilizações do objeto button*/
+                             /*[brightness]- efeito que diminuo claridade do objeto botão*/
+}

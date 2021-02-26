@@ -1,0 +1,31 @@
+/*aplicando conceito de css model, para o meu componente ExperienceBar*/
+
+/*Config stylus da barra de status bar experience*/
+.experienceBar {
+    display: flex;
+    align-items: center;   
+  }
+  .experienceBar span {
+   font-size: 1rem;
+  }
+  .experienceBar > div { /*[>]- pego 1° nivel de filho em cascata*/
+   flex: 1;
+   height: 4px;
+   border-radius: 4px;
+   background: var(--gray-line);
+   margin: 0 1.5rem; /*20px tamanho normal*/
+   position: relative; 
+  }
+  
+  .experienceBar > div > div {  /*[>]- pego 2° nivel de filho em cascata*/
+      height: 4px;
+      border-radius: 4px;
+      background: var(--green); /*Defino um cor de valor autual de progresso no status bar*/
+  }
+  
+  span.currentExperience {
+      position: absolute;
+      top: 12px;
+      transform: translateX(-50%);/*[translateX(-50%)]- manteno o elemento ao centro status bar -50% do eixo x*/
+  }
+  

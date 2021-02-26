@@ -1,0 +1,55 @@
+* {   /*config. globais*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+:root { /*defino variaves de cores*/
+    --white:#fff;
+    --background:#f2f3f5;
+    --gray-line:#dcdde0;
+    --text:#666666;
+    --text-highlight: #b3b9ff;
+    --title: #2e384d;
+    --red:#e83f5b;
+    --green:#4cd62b;
+    --blue:#5965e0;
+    --blue-dark:#4953b8;
+    --blue-twitter: #2aa9e0;
+}
+
+/*flex mobal web*/
+@media(max-width: 1080px){ 
+    html{/*quando tela for menor 1080px*/
+     font-size: 93.75%; /* 16 x 0.9375 = 15px , ou seja diminuo 1px dentro das medidas tamanho texto */
+    }
+}
+/*flex mobal - Mobile*/
+@media(max-width: 720px){ 
+    html{/*quando tela for menor 720px*/
+     font-size: 87.5%; /* 16 x 0.875 = 14px , ou seja diminuo 2px dentro das medidas tamanho texto */
+    }
+}
+
+/*Config, corpo page*/
+body {
+  background-color: var(--background);
+  color: var(--text);  
+  /* font-family: 'Inter' sans-serif;   */
+}
+
+body, input, textarea, button {
+    font: 400 1rem "Inter", sans-serif; /*[1rem] é 16px(tamanho-padrão pixel paginal*/
+}
+
+button {
+    cursor: pointer;
+}
+
+a { /*Ajusto todos os links da pag.*/
+  color: inherit; /*[inherit]- herdar a cor do container*/
+  text-decoration: none; /*removo sublinhado do link*/
+}
+
+
+
