@@ -1,9 +1,13 @@
-import { useState,useEffect } from 'react'; //[useEffect] - é função dispara efeito colateral
+import { useState,useEffect, useContext } from 'react'; //[useEffect] - é função dispara efeito colateral
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Countdown.module.css';
 
 let countdownTimeout: NodeJS.Timeout;//var goblal para indentifica formato countdown 
 //componente de contagem de intervalos
 export function Countdown() {
+   const { startNewChallenge } = useContext(ChallengesContext);//[contextData]- consumo contexto dentro da aplicação de diversos lugares
+   //console.log(contexData);
+
     const [time, setTime] = useState(25 * 60);//padrão valor de tempo a calcular
     const [isActive, setIsActive] = useState(false) // verifica se nosso contador esta ativou ou pausado
     const [hasFinished, setHasFinished] = useState(false); //verifico se contador finalizou
@@ -42,8 +46,8 @@ export function Countdown() {
          }else if (isActive && time ==0){
            setHasFinished(true);// contador finalizado
            setIsActive(false);// contador desetivado
-            //  console.log('finalizou')
-
+           startNewChallenge();
+          //console.log('finalizou')
          }
         }, [isActive,time])//executo quando for ativo e o time muda
 
