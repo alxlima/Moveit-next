@@ -3,12 +3,13 @@
 import '../styles/global.css' //[import] - no React, sempre importo o css para pagina do react não html
 
 import { ChallengesProvider } from '../contexts/ChallengesContext'
+import React from 'react'
 
 function MyApp({ Component, pageProps }) {
  
   return (
      <ChallengesProvider>
-     <Component {...pageProps} />
+          <Component {...pageProps} />
      </ChallengesProvider>
   )
 } //[ChallengesContext.Provider]]- todo os elemento dentro do provider terão acesso ao elementos do contexto

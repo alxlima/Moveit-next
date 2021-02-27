@@ -1,15 +1,30 @@
 import { useContext } from 'react'; // import dentro do reac
 import { ChallengesContext } from '../contexts/ChallengesContext';
+import { CountdownContext } from '../contexts/CountdownContext';
+
 import styles from '../styles/components/ChallengeBox.module.css';
 
 export function ChallengeBox(){
-     const { activeChallenge,resetChallenge } = useContext(ChallengesContext);// [contextData]- consumo contexto dentro da aplicação de diversos lugares
-     
+     const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);// [contextData]- consumo contexto dentro da aplicação de diversos lugares
+     const { resetCountdown} = useContext(CountdownContext);
+
+     // Resetar contdown , quando acionar button completei
+     function handlechallengeSucceeded(){
+       completeChallenge();
+       resetCountdown();   
+     }
+     // Resetar contdown , quando acionar button falhei
+     function handleChallengeFailed(){
+        resetChallenge();
+        resetCountdown();
+     }
+
+
      return(
          <div className={styles.challengeBoxContainer}>
           { activeChallenge ? (
               <div className={styles.challengeActive}>
-                  <header>Ganhe {activeChallenge.amout} xp</header>
+                  <header>Ganhe {activeChallenge.amount} xp</header>
 
                   <main>
                       <img src={`icons/${activeChallenge.type}.svg`} />
@@ -21,7 +36,7 @@ export function ChallengeBox(){
                       <button 
                        type='button'
                        className={styles.challengeFailedButton}
-                       onClick={resetChallenge }
+                       onClick={handleChallengeFailed}
                        >
                        Falhei
                       </button>
@@ -29,6 +44,7 @@ export function ChallengeBox(){
                       <button 
                       type='button'
                       className={styles.challengeSucceededButton}
+                      onClick={handlechallengeSucceeded}
                       >
                       Completei
                       </button>
