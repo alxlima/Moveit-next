@@ -24,7 +24,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     const { startNewChallenge } = useContext(ChallengesContext);//[contextData]- consumo contexto dentro da aplicação de diversos lugares
     //console.log(contexData);
 
-    const [time, setTime] = useState(0.1 * 60);//padrão valor de tempo a calcular
+    const [time, setTime] = useState(25 * 60);//padrão valor de tempo a calcular
     const [isActive, setIsActive] = useState(false) // verifica se nosso contador esta ativou ou pausado
     const [hasFinished, setHasFinished] = useState(false); //verifico se contador finalizou
 
@@ -41,7 +41,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
         clearTimeout(countdownTimeout); // limpo interval 1 seg do timeout
         setIsActive(false);
         setHasFinished(false);
-        setTime(0.1*60);// retorno o time para valor inicial- se remover isso a hora pausa
+        setTime(25*60);// retorno o time para valor inicial- se remover isso a hora pausa
       }
       
       // Ideia inicial para para pausar o tempo do contador, caso precisar aplicar no futuro
