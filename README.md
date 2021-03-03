@@ -10,7 +10,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-telas">Telas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-licença">Licença</a>
   <p align="center">
 
 <!---------- Badges ----------------->  
@@ -48,16 +48,15 @@
 
 ## 🔖 Sobre
 
- #### Este projeto é parte do evento que participei o **Next Level Week #4** conhecido como **NLW** da [Rocketseat](https://rocketseat.com.br). Foi uma semana de maratona de estudos sobre desenvolvimento Web(Front-End), em sua 4° edição. O projeto denominado **Move-It**, teve como objetivo criar um aplicativo para contabilizar inicio de ciclos de tempo com foco em intervalos com desafios de exercícios propostos para o bem estar e saúde.
- #### O sistema **Move-It**, é uma aplicação que te ajudara a se exercitar após longas horas de trabalho em frente ao computador, possibilitando realizar o controle do seu tempo e o foco nas atividades. A cada pausa é automaticamente aplicado um sorteio de novos desafios com detalhes de exercícios e atividades saudáveis a serem realizadas, ao concluir é contabilizado os status de experiência do usuário, incluindo seu ganho total de experiências a os níveis de cada level e quantidade de desafios concluídos.
+###### Este projeto é parte do evento que participei o **Next Level Week #4** conhecido como **NLW** da [Rocketseat](https://rocketseat.com.br). Foi uma semana de maratona de estudos sobre desenvolvimento Web(Front-End), em sua 4° edição. O projeto denominado **Move-It**, teve como objetivo criar um aplicativo para contabilizar inicio de ciclos de tempo com foco em intervalos com desafios de exercícios propostos para o bem estar e saúde.
+ ###### O sistema **Move-It**, é uma aplicação que te ajudara a se exercitar após longas horas de trabalho em frente ao computador, possibilitando realizar o controle do seu tempo e o foco nas atividades. A cada pausa é automaticamente aplicado um sorteio de novos desafios com detalhes de exercícios e atividades saudáveis a serem realizadas, ao concluir é contabilizado os status de experiência do usuário, incluindo seu ganho total de experiências a os níveis de cada level e quantidade de desafios concluídos.
   
   <br>
 
   ## 💻 Projeto
   
-  ####  Sua construção e desenvolvimento foi através de arquitetura de componentes do **React.js** e **Next.js**, utilizando dependências das bibliotecas **TypeScript**, aplicando conceitos de utilização de componentes aplicados a contextos, que tem a vantagens de poder ser consumidos em requisições clientes **API**. O conceito da aplicação  se resume na criação de um **Countdown**, que dispara um ciclo de início e após o término sorteia um desafio a ser realizado para que você faça pausas durante o dia cansativo de trabalho. A ideia tem base na técnica de [Pomodoro](https://pomofocus.io/), com o objetivo de melhorar sua produtividade e foco. 
-  #### Contem a aplicação de eventos de notificações Windows, efeitos sonoros, apresentações de resultados de level através de animações em show Modal, contudo contabilizados em calculo máximos de experiência atingida.
- #### Como persistência de armazenamento de dados, utilizado o conceito de salvamento no próprio Web Browser, através de **Cookies** incluindo aplicação de tipagems do js-cookie para o **NDM**.
+ ######  Sua construção e desenvolvimento foi através de arquitetura de componentes do **React.js** e **Next.js**, utilizando dependências das bibliotecas **TypeScript**, aplicando conceitos de utilização de componentes aplicados a contextos, que tem a vantagens de poder ser consumidos em requisições clientes **API**. O conceito da aplicação  se resume na criação de um **Countdown**, que dispara um ciclo de início e após o término sorteia um desafio a ser realizado para que você faça pausas durante o dia cansativo de trabalho. A ideia tem base na técnica de [Pomodoro](https://pomofocus.io/), com o objetivo de melhorar sua produtividade e foco. 
+ ###### Contem a aplicação de eventos de notificações Windows, efeitos sonoros, apresentações de resultados de level através de animações em show Modal, contudo contabilizados em calculo máximos de experiência atingida. Como persistência de armazenamento de dados, utilizado o conceito de salvamento no próprio Web Browser, através de **Cookies** incluindo aplicação de tipagems do js-cookie para o **NDM**.
 
 <br>
 
