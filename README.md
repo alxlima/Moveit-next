@@ -26,7 +26,7 @@
   <!----(008ed6)--Blue -->
   <!----(3292a6)--BlueMedium-->
 </p>
-
+<br>
 <!---------- showcase  ----------------->  
 <p align="center">
   <img alt="LoopLAB" src="screen_shots/LogoMovIT-Next.png" width="100%">
